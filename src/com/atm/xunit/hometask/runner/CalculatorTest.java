@@ -3,6 +3,7 @@ package com.atm.xunit.hometask.runner;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -104,6 +105,16 @@ public class CalculatorTest {
 			System.out.println("The value is not matching with the expected trignometical value");
 		}		
 	}
+	
+	// [IK] Bug example - will fail.
+	
+	@Test(groups = {"negative"})
+	    public void testTangens() {
+	        double result = calc.tg(45);
+	        System.out.println("Mistake in the formula! It always return 1 because of using 'this' in the formula: this.sin(a) / this.cos(a); ");
+	        Assert.assertEquals(result, Math.tan(45));
+
+	    }
 	
 
 	@AfterClass(groups = { "positive", "negative","cosine","trigonometry"})

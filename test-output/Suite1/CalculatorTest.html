@@ -1,0 +1,259 @@
+<html>
+<head>
+<title>TestNG:  CalculatorTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CalculatorTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 07 17:34:15 MSK 2017</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (68 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>negative tangent cosine positive </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testAdd()'><b>testAdd</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 2, 4</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testAdd()'><b>testAdd</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 3, 5</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testAdd()'><b>testAdd</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 5, 3, 8</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testCosine()'><b>testCosine</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 0, 1</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testCosine()'><b>testCosine</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 45, 0.70710678118</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testCosine()'><b>testCosine</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 90, 0</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testDiv()'><b>testDiv</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 4, 2, 2</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testDiv()'><b>testDiv</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 6, 3, 2</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testDiv()'><b>testDiv</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 15, 3, 5</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testMul()'><b>testMul</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 4, 2, 8</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testMul()'><b>testMul</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 5, 3, 15</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testMul()'><b>testMul</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 6, 3, 18</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegAdd()'><b>testNegAdd</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 2, 5</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegAdd()'><b>testNegAdd</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 3, 6</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegAdd()'><b>testNegAdd</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 5, 3, 9</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegDiv()'><b>testNegDiv</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 2, 4</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegDiv()'><b>testNegDiv</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 3, 11</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegDiv()'><b>testNegDiv</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 15, 3, 19</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegMul()'><b>testNegMul</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 2, 41</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegMul()'><b>testNegMul</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 12, 3, 111</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegMul()'><b>testNegMul</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 115, 3, 91</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegSqrt()'><b>testNegSqrt</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: -4, 12</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegSqrt()'><b>testNegSqrt</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: -16, 45</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegSqrt()'><b>testNegSqrt</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: -181, 97</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegSub()'><b>testNegSub</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 2, 1</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegSub()'><b>testNegSub</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 2, 3, 1</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testNegSub()'><b>testNegSub</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 15, 3, 9</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testSqrt()'><b>testSqrt</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 4, 2</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testSqrt()'><b>testSqrt</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 16, 4</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testSqrt()'><b>testSqrt</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 81, 9</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testSub()'><b>testSub</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 4, 2, 2</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testSub()'><b>testSub</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 5, 3, 2</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testSub()'><b>testSub</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 6, 3, 3</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testTangent()'><b>testTangent</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 0, 0</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testTangent()'><b>testTangent</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 45, 1</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+<tr>
+<td title='com.atm.xunit.hometask.runner.CalculatorTest.testTangent()'><b>testTangent</b><br>Test class: com.atm.xunit.hometask.runner.CalculatorTest<br>Parameters: 60, 1.73205080757</td>
+<td></td>
+<td>0</td>
+<td>com.atm.xunit.hometask.runner.CalculatorTest@7006c658</td></tr>
+</table><p>
+</body>
+</html>

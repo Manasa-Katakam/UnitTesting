@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Igar_Kharytonenka\AppData\Local\Temp\testng-eclipse-1518307078\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">37 methods, 1 failed,   36 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testTangens">testTangens</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testAdd(2, 2, 4)">testAdd(2, 2, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testAdd(2, 3, 5)">testAdd(2, 3, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testAdd(5, 3, 8)">testAdd(5, 3, 8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testCosine(90, 0)">testCosine(90, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testCosine(0, 1)">testCosine(0, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testCosine(45, 0.70710678118)">testCosine(45, 0.70710678118)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testDiv(15, 3, 5)">testDiv(15, 3, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testDiv(6, 3, 2)">testDiv(6, 3, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testDiv(4, 2, 2)">testDiv(4, 2, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testMul(6, 3, 18)">testMul(6, 3, 18)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testMul(5, 3, 15)">testMul(5, 3, 15)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testMul(4, 2, 8)">testMul(4, 2, 8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegAdd(2, 2, 5)">testNegAdd(2, 2, 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegAdd(2, 3, 6)">testNegAdd(2, 3, 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegAdd(5, 3, 9)">testNegAdd(5, 3, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegDiv(2, 2, 4)">testNegDiv(2, 2, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegDiv(2, 3, 11)">testNegDiv(2, 3, 11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegDiv(15, 3, 19)">testNegDiv(15, 3, 19)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegMul(115, 3, 91)">testNegMul(115, 3, 91)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegMul(2, 2, 41)">testNegMul(2, 2, 41)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegMul(12, 3, 111)">testNegMul(12, 3, 111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegSqrt(-181, 97)">testNegSqrt(-181, 97)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegSqrt(-16, 45)">testNegSqrt(-16, 45)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegSqrt(-4, 12)">testNegSqrt(-4, 12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegSub(2, 3, 1)">testNegSub(2, 3, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegSub(15, 3, 9)">testNegSub(15, 3, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testNegSub(2, 2, 1)">testNegSub(2, 2, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testSqrt(4, 2)">testSqrt(4, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testSqrt(81, 9)">testSqrt(81, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testSqrt(16, 4)">testSqrt(16, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testSub(5, 3, 2)">testSub(5, 3, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testSub(4, 2, 2)">testSub(4, 2, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testSub(6, 3, 3)">testSub(6, 3, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testTangent(45, 1)">testTangent(45, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testTangent(60, 1.73205080757)">testTangent(60, 1.73205080757)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.atm.xunit.hometask.runner.CalculatorTest" hash-for-method="testTangent(0, 0)">testTangent(0, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.atm.xunit.hometask.runner.CalculatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTangens">
+                  </a> <!-- testTangens -->
+                  <span class="method-name">testTangens</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.6197751905438615] but found [1.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.atm.xunit.hometask.runner.CalculatorTest.testTangens(CalculatorTest.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.atm.xunit.hometask.runner.CalculatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdd(2, 2, 4)">
+                  </a> <!-- testAdd(2, 2, 4) -->
+                  <span class="method-name">testAdd</span>
+                  <span class="parameters">(2, 2, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdd(2, 3, 5)">
+                  </a> <!-- testAdd(2, 3, 5) -->
+                  <span class="method-name">testAdd</span>
+                  <span class="parameters">(2, 3, 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdd(5, 3, 8)">
+                  </a> <!-- testAdd(5, 3, 8) -->
+                  <span class="method-name">testAdd</span>
+                  <span class="parameters">(5, 3, 8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCosine(90, 0)">
+                  </a> <!-- testCosine(90, 0) -->
+                  <span class="method-name">testCosine</span>
+                  <span class="parameters">(90, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCosine(0, 1)">
+                  </a> <!-- testCosine(0, 1) -->
+                  <span class="method-name">testCosine</span>
+                  <span class="parameters">(0, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCosine(45, 0.70710678118)">
+                  </a> <!-- testCosine(45, 0.70710678118) -->
+                  <span class="method-name">testCosine</span>
+                  <span class="parameters">(45, 0.70710678118)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDiv(15, 3, 5)">
+                  </a> <!-- testDiv(15, 3, 5) -->
+                  <span class="method-name">testDiv</span>
+                  <span class="parameters">(15, 3, 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDiv(6, 3, 2)">
+                  </a> <!-- testDiv(6, 3, 2) -->
+                  <span class="method-name">testDiv</span>
+                  <span class="parameters">(6, 3, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDiv(4, 2, 2)">
+                  </a> <!-- testDiv(4, 2, 2) -->
+                  <span class="method-name">testDiv</span>
+                  <span class="parameters">(4, 2, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMul(6, 3, 18)">
+                  </a> <!-- testMul(6, 3, 18) -->
+                  <span class="method-name">testMul</span>
+                  <span class="parameters">(6, 3, 18)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMul(5, 3, 15)">
+                  </a> <!-- testMul(5, 3, 15) -->
+                  <span class="method-name">testMul</span>
+                  <span class="parameters">(5, 3, 15)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMul(4, 2, 8)">
+                  </a> <!-- testMul(4, 2, 8) -->
+                  <span class="method-name">testMul</span>
+                  <span class="parameters">(4, 2, 8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegAdd(2, 2, 5)">
+                  </a> <!-- testNegAdd(2, 2, 5) -->
+                  <span class="method-name">testNegAdd</span>
+                  <span class="parameters">(2, 2, 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegAdd(2, 3, 6)">
+                  </a> <!-- testNegAdd(2, 3, 6) -->
+                  <span class="method-name">testNegAdd</span>
+                  <span class="parameters">(2, 3, 6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegAdd(5, 3, 9)">
+                  </a> <!-- testNegAdd(5, 3, 9) -->
+                  <span class="method-name">testNegAdd</span>
+                  <span class="parameters">(5, 3, 9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegDiv(2, 2, 4)">
+                  </a> <!-- testNegDiv(2, 2, 4) -->
+                  <span class="method-name">testNegDiv</span>
+                  <span class="parameters">(2, 2, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegDiv(2, 3, 11)">
+                  </a> <!-- testNegDiv(2, 3, 11) -->
+                  <span class="method-name">testNegDiv</span>
+                  <span class="parameters">(2, 3, 11)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegDiv(15, 3, 19)">
+                  </a> <!-- testNegDiv(15, 3, 19) -->
+                  <span class="method-name">testNegDiv</span>
+                  <span class="parameters">(15, 3, 19)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegMul(115, 3, 91)">
+                  </a> <!-- testNegMul(115, 3, 91) -->
+                  <span class="method-name">testNegMul</span>
+                  <span class="parameters">(115, 3, 91)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegMul(2, 2, 41)">
+                  </a> <!-- testNegMul(2, 2, 41) -->
+                  <span class="method-name">testNegMul</span>
+                  <span class="parameters">(2, 2, 41)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegMul(12, 3, 111)">
+                  </a> <!-- testNegMul(12, 3, 111) -->
+                  <span class="method-name">testNegMul</span>
+                  <span class="parameters">(12, 3, 111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegSqrt(-181, 97)">
+                  </a> <!-- testNegSqrt(-181, 97) -->
+                  <span class="method-name">testNegSqrt</span>
+                  <span class="parameters">(-181, 97)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegSqrt(-16, 45)">
+                  </a> <!-- testNegSqrt(-16, 45) -->
+                  <span class="method-name">testNegSqrt</span>
+                  <span class="parameters">(-16, 45)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegSqrt(-4, 12)">
+                  </a> <!-- testNegSqrt(-4, 12) -->
+                  <span class="method-name">testNegSqrt</span>
+                  <span class="parameters">(-4, 12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegSub(2, 3, 1)">
+                  </a> <!-- testNegSub(2, 3, 1) -->
+                  <span class="method-name">testNegSub</span>
+                  <span class="parameters">(2, 3, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegSub(15, 3, 9)">
+                  </a> <!-- testNegSub(15, 3, 9) -->
+                  <span class="method-name">testNegSub</span>
+                  <span class="parameters">(15, 3, 9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegSub(2, 2, 1)">
+                  </a> <!-- testNegSub(2, 2, 1) -->
+                  <span class="method-name">testNegSub</span>
+                  <span class="parameters">(2, 2, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSqrt(4, 2)">
+                  </a> <!-- testSqrt(4, 2) -->
+                  <span class="method-name">testSqrt</span>
+                  <span class="parameters">(4, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSqrt(81, 9)">
+                  </a> <!-- testSqrt(81, 9) -->
+                  <span class="method-name">testSqrt</span>
+                  <span class="parameters">(81, 9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSqrt(16, 4)">
+                  </a> <!-- testSqrt(16, 4) -->
+                  <span class="method-name">testSqrt</span>
+                  <span class="parameters">(16, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSub(5, 3, 2)">
+                  </a> <!-- testSub(5, 3, 2) -->
+                  <span class="method-name">testSub</span>
+                  <span class="parameters">(5, 3, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSub(4, 2, 2)">
+                  </a> <!-- testSub(4, 2, 2) -->
+                  <span class="method-name">testSub</span>
+                  <span class="parameters">(4, 2, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSub(6, 3, 3)">
+                  </a> <!-- testSub(6, 3, 3) -->
+                  <span class="method-name">testSub</span>
+                  <span class="parameters">(6, 3, 3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTangent(45, 1)">
+                  </a> <!-- testTangent(45, 1) -->
+                  <span class="method-name">testTangent</span>
+                  <span class="parameters">(45, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTangent(60, 1.73205080757)">
+                  </a> <!-- testTangent(60, 1.73205080757) -->
+                  <span class="method-name">testTangent</span>
+                  <span class="parameters">(60, 1.73205080757)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTangent(0, 0)">
+                  </a> <!-- testTangent(0, 0) -->
+                  <span class="method-name">testTangent</span>
+                  <span class="parameters">(0, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Igar_Kharytonenka\AppData\Local\Temp\testng-eclipse-1518307078\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.atm.xunit.hometask.runner.CalculatorTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cosine</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCosine</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">negative</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNegAdd</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNegDiv</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNegMul</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNegSqrt</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNegSub</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testTangens</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAdd</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDiv</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMul</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSqrt</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testSub</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">tangent</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testTangent</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(37);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCosine')
+data.setCell(0, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(0, 3, 14);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testMul')
+data.setCell(1, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(1, 3, 9);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testNegMul')
+data.setCell(2, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(2, 3, 8);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testNegAdd')
+data.setCell(3, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(3, 3, 5);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCosine')
+data.setCell(4, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDiv')
+data.setCell(5, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testNegSqrt')
+data.setCell(6, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testNegMul')
+data.setCell(7, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testDiv')
+data.setCell(8, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSqrt')
+data.setCell(9, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(9, 3, 3);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testSqrt')
+data.setCell(10, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(10, 3, 3);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSqrt')
+data.setCell(11, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(11, 3, 3);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testDiv')
+data.setCell(12, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(12, 3, 3);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCosine')
+data.setCell(13, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(13, 3, 3);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testAdd')
+data.setCell(14, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(14, 3, 3);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testMul')
+data.setCell(15, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(15, 3, 3);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testAdd')
+data.setCell(16, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(16, 3, 3);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testSub')
+data.setCell(17, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(17, 3, 3);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testTangens')
+data.setCell(18, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(18, 3, 3);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testNegDiv')
+data.setCell(19, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(19, 3, 2);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testMul')
+data.setCell(20, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(20, 3, 2);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testAdd')
+data.setCell(21, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(21, 3, 2);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testNegSub')
+data.setCell(22, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(22, 3, 2);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testNegSqrt')
+data.setCell(23, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(23, 3, 2);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testTangent')
+data.setCell(24, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(24, 3, 2);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testNegAdd')
+data.setCell(25, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(25, 3, 2);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testSub')
+data.setCell(26, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(26, 3, 2);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testNegSub')
+data.setCell(27, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(27, 3, 2);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testNegDiv')
+data.setCell(28, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(28, 3, 1);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testNegAdd')
+data.setCell(29, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testTangent')
+data.setCell(30, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(30, 3, 1);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testNegSqrt')
+data.setCell(31, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testNegDiv')
+data.setCell(32, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testSub')
+data.setCell(33, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(33, 3, 1);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testNegMul')
+data.setCell(34, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(34, 3, 1);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testNegSub')
+data.setCell(35, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(35, 3, 1);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testTangent')
+data.setCell(36, 2, 'com.atm.xunit.hometask.runner.CalculatorTest')
+data.setCell(36, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 111 ms</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.atm.xunit.hometask.runner.CalculatorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCosine(0, 1)</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCosine(45, 0.70710678118)</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCosine(90, 0)</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegSub(2, 2, 1)</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegSub(2, 3, 1)</span>
+                <span class="method-start">70 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegSub(15, 3, 9)</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAdd(2, 2, 4)</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAdd(2, 3, 5)</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAdd(5, 3, 8)</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDiv(4, 2, 2)</span>
+                <span class="method-start">103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDiv(6, 3, 2)</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDiv(15, 3, 5)</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMul(4, 2, 8)</span>
+                <span class="method-start">134 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMul(5, 3, 15)</span>
+                <span class="method-start">143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMul(6, 3, 18)</span>
+                <span class="method-start">157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegAdd(2, 2, 5)</span>
+                <span class="method-start">165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegAdd(2, 3, 6)</span>
+                <span class="method-start">174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegAdd(5, 3, 9)</span>
+                <span class="method-start">184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegDiv(2, 2, 4)</span>
+                <span class="method-start">190 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegDiv(2, 3, 11)</span>
+                <span class="method-start">196 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegDiv(15, 3, 19)</span>
+                <span class="method-start">199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegMul(2, 2, 41)</span>
+                <span class="method-start">204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegMul(12, 3, 111)</span>
+                <span class="method-start">216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegMul(115, 3, 91)</span>
+                <span class="method-start">222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegSqrt(-4, 12)</span>
+                <span class="method-start">236 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegSqrt(-16, 45)</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegSqrt(-181, 97)</span>
+                <span class="method-start">243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSqrt(4, 2)</span>
+                <span class="method-start">251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSqrt(16, 4)</span>
+                <span class="method-start">255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSqrt(81, 9)</span>
+                <span class="method-start">259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSub(4, 2, 2)</span>
+                <span class="method-start">269 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSub(5, 3, 2)</span>
+                <span class="method-start">271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSub(6, 3, 3)</span>
+                <span class="method-start">277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTangens</span>
+                <span class="method-start">282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTangent(0, 0)</span>
+                <span class="method-start">296 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTangent(45, 1)</span>
+                <span class="method-start">298 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTangent(60, 1.73205080757)</span>
+                <span class="method-start">299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">303 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
