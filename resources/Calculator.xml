@@ -8,6 +8,7 @@
 				<include name="negative" />
 				<include name="tangent" />
 				<include name="cosine" />
+				<exclude name="broken" />
 			</run>
 		</groups>
 		<classes>

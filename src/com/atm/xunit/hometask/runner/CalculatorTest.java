@@ -48,7 +48,7 @@ public class CalculatorTest {
 		assertEquals(expected, result);
 	}
 
-	@Test(groups = { "positive" }, dataProviderClass = DataForCalculation.class, dataProvider = "sqrtInput")
+	@Test(groups = { "positive,broken" }, dataProviderClass = DataForCalculation.class, dataProvider = "sqrtInput")
 	public void testSqrt(double a, double expected) {
 		double result = calc.sqrt(a);
 		assertEquals(expected, result);
@@ -72,7 +72,7 @@ public class CalculatorTest {
 		assertFalse(expected == result);
 	}
 
-	@Test(groups = { "negative" }, dataProviderClass = DataForCalculation.class, dataProvider = "divNegInput")
+	@Test(groups = { "negative, broken" }, dataProviderClass = DataForCalculation.class, dataProvider = "divNegInput")
 	public void testNegDiv(double a, double b, double expected) {
 		double result = calc.div(a, b);
 		assertFalse(expected == result);
@@ -106,7 +106,6 @@ public class CalculatorTest {
 		}		
 	}
 	
-	// [IK] Bug example - will fail.
 	
 	@Test(groups = {"negative"})
 	    public void testTangens() {
@@ -115,6 +114,14 @@ public class CalculatorTest {
 	        Assert.assertEquals(result, Math.tan(45));
 
 	    }
+	//[MK Added test]
+	@Test(groups = {"negative"})
+    public void testTangens() {
+        double result = calc.cos(90);
+        System.out.println("Mistake in the formula! ");
+        Assert.assertEquals(result, Math.cos(90));
+
+    }
 	
 
 	@AfterClass(groups = { "positive", "negative","cosine","trigonometry"})
