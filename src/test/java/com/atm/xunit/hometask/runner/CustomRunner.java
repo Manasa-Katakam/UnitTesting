@@ -7,9 +7,10 @@ import org.testng.xml.XmlSuite;
 
 import com.atm.xunit.hometask.listener.Listener;
 
-public class CustomRunner2 {
+public class CustomRunner {
 
-    public static void main(String[] args) {
+    @SuppressWarnings({ "deprecation", "serial" })
+	public static void main(String[] args) {
 	TestNG testNG = new TestNG();
 	testNG.addListener(new Listener());
 
